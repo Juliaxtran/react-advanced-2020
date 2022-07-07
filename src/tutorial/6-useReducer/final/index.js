@@ -11,6 +11,8 @@ const defaultState = {
 const Index = () => {
   const [name, setName] = useState('');
   const [state, dispatch] = useReducer(reducer, defaultState);
+
+  
   const handleSubmit = (e) => {
     e.preventDefault();
     if (name) {
