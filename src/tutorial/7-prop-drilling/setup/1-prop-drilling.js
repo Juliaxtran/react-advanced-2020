@@ -1,10 +1,27 @@
 import React, { useState } from 'react';
+import {data} from '../../../data';
 
 // more components
 // fix - context api, redux (for more complex cases)
 
 const PropDrilling = () => {
-  return <h2>prop drilling</h2>;
+  const [people, setPeople] = useState(data);
+  return (
+    <section>
+      <h3>Prop Drilling</h3>
+      <List people={people}/>
+    </section>
+  );
 };
+
+const List = ({people}) => {
+  return (
+    <>
+   {People.map((person) => {
+     return
+   })}
+  </>)
+
+}
 
 export default PropDrilling;
